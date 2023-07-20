@@ -1,3 +1,13 @@
+class Cash:
+    def __init__(self):
+        pass
+    def startTime(self):
+        tc = 0
+        if q1.isEmpty() == False:
+            tc+=1
+        else:
+            tc = 0
+        return tc
 class Queue:
     def __init__(self, list = None):
         if list == None:
@@ -18,22 +28,11 @@ class Queue:
         return len(self.items)
     def showItem(self):
         return self.items
-
-inp = input("Enter Input : ").split(",")
-q = Queue()
-for i in inp :
-    if i[0] == "E":
-        e = i.split(" ")
-        q.enQueue(e[1])
-        print(q.size())
-    elif i[0] == "D":
-        if q.size() > 0:
-            print(q.deQueue(),0)
-        elif q.size() == 0:
-            print(-1)
-if q.size() > 0:
-    for j in q.items:
-        print(j,end=" ")
-elif q.size() == 0:
-    print("Empty")
-# print(s)
+q1 = Queue()
+c = Cash()
+inp = int(input("aa : "))
+for i in range(10):
+    if i == inp:
+        q1.enQueue("a")
+        a = c.startTime()
+print(a,q1.showItem())

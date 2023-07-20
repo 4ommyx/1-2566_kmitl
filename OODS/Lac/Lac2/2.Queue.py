@@ -18,22 +18,13 @@ class Queue:
         return len(self.items)
     def showItem(self):
         return self.items
+    
 
-inp = input("Enter Input : ").split(",")
 q = Queue()
-for i in inp :
-    if i[0] == "E":
-        e = i.split(" ")
-        q.enQueue(e[1])
-        print(q.size())
-    elif i[0] == "D":
-        if q.size() > 0:
-            print(q.deQueue(),0)
-        elif q.size() == 0:
-            print(-1)
-if q.size() > 0:
-    for j in q.items:
-        print(j,end=" ")
-elif q.size() == 0:
-    print("Empty")
-# print(s)
+q.enQueue(1)
+q.enQueue(2)
+print(q.showItem())
+q.deQueue()
+q.deQueue()
+print(q.showItem())
+print(q.isEmpty())
