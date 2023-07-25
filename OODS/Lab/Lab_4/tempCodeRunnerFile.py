@@ -1,1 +1,0 @@
-print(sort_W)
