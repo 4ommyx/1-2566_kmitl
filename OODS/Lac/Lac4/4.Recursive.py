@@ -47,16 +47,28 @@ def FibR(n): #ถอยหลัง
         return FibR(n-1)+FibR(n-2)
 
 # ----- Binary Search ------
-def searchI(low,high,data):
+def searchI(low,high,data,x):
     while low<=high:
-        mid = (low+high)/2
-        if data[]
-# lis = [1,2,3,4,5]
-# print(sumR(len(lis), lis))
-# print(sumI(lis))
-# print(sumR2(0,len(lis)-1,lis))
+        mid = int((low+high)/2)
+        if data[mid] == x :
+            return data[mid]
+        elif data[mid] < x:
+            low = mid+1
+        else:
+            high = mid-1
+def searchR(low,high,data,x):
+    if low>high:
+        return "Not found"
+    else:
+        mid = int((low+high)/2)
+        if data[mid] == x:
+            return data[mid]
+        elif data[mid] < x:
+            return searchR(mid+1,high,data,x)
+        else :
+            return searchR(low,mid-1,data,x)
 
-print(FibI(40))
-# for j in range(10):
-#     print(FacI(j))
-#     print(FacR(j))
+lis = [0,2,3,4,5,10]
+# print(searchI(0,len(lis),lis,5))
+print(searchR(0,len(lis),lis,5))
+
