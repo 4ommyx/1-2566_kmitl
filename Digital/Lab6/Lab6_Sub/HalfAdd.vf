@@ -1,0 +1,40 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : HalfAdd.vf
+// /___/   /\     Timestamp : 09/02/2023 13:45:43
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Sub/HalfAdd.vf -w C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Sub/HalfAdd.sch
+//Design Name: HalfAdd
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module HalfAdd(A, 
+               B, 
+               C, 
+               S);
+
+    input A;
+    input B;
+   output C;
+   output S;
+   
+   
+   XOR2  XLXI_1 (.I0(B), 
+                .I1(A), 
+                .O(S));
+   AND2  XLXI_2 (.I0(B), 
+                .I1(A), 
+                .O(C));
+endmodule

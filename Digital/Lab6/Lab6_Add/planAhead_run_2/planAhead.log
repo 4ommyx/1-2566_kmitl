@@ -1,0 +1,87 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Sat Sep 02 22:49:41 2023
+# Process ID: 18516
+# Log file: C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/pa.fromHdl.tcl
+# create_project -name Lab6_Add -dir "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/planAhead_run_2" -part xc6slx9tqg144-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "Lab6_Add.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/Lab6_Add.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {SevenSig.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {HalfAdd.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {FullAdd.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Lab6_Add.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top Lab6_Add $srcset
+# add_files [list {Lab6_Add.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-3
+Using Verific elaboration
+Parsing VHDL file "D:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/Lab6_Add.vf" into library work
+Loading clock regions from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from D:/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : D:/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/Lab6_Add.ucf]
+Finished Parsing UCF File [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/Lab6_Add.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: b8ba4242
+open_rtl_design: Time (s): elapsed = 00:00:08 . Memory (MB): peak = 554.121 ; gain = 115.398
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P27 [get_ports P27]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports P29]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports P32]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports P34]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports P35]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports P40]
+endgroup
+startgroup
+set_property package_pin P41 [get_ports P41]
+endgroup
+set_property is_loc_fixed false [get_ports [list  P40]]
+set_property is_loc_fixed true [get_ports [list  P40]]
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add\planAhead_pid18516.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sat Sep 02 22:50:38 2023...
+INFO: [Common 17-83] Releasing license: PlanAhead

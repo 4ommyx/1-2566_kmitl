@@ -1,0 +1,90 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Lab7.vf
+// /___/   /\     Timestamp : 09/16/2023 20:34:54
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/natta/OneDrive/Desktop/Digital/Lab7/Lab7.vf -w C:/Users/natta/OneDrive/Desktop/Digital/Lab7/Lab7.sch
+//Design Name: Lab7
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Lab7(clock_P46, 
+            a_P41, 
+            b_P40, 
+            common0_P44, 
+            common2_P33, 
+            common3_P30, 
+            com1_P43, 
+            c_P35, 
+            d_P34, 
+            e_P32, 
+            f_P29);
+
+    input clock_P46;
+   output a_P41;
+   output b_P40;
+   output common0_P44;
+   output common2_P33;
+   output common3_P30;
+   output com1_P43;
+   output c_P35;
+   output d_P34;
+   output e_P32;
+   output f_P29;
+   
+   wire vccLine;
+   wire c_P35_DUMMY;
+   wire e_P32_DUMMY;
+   wire b_P40_DUMMY;
+   wire common0_P44_DUMMY;
+   wire d_P34_DUMMY;
+   wire a_P41_DUMMY;
+   wire f_P29_DUMMY;
+   
+   assign a_P41 = a_P41_DUMMY;
+   assign b_P40 = b_P40_DUMMY;
+   assign common0_P44 = common0_P44_DUMMY;
+   assign c_P35 = c_P35_DUMMY;
+   assign d_P34 = d_P34_DUMMY;
+   assign e_P32 = e_P32_DUMMY;
+   assign f_P29 = f_P29_DUMMY;
+   FD #( .INIT(1'b0) ) XLXI_3 (.C(clock_P46), 
+              .D(a_P41_DUMMY), 
+              .Q(b_P40_DUMMY));
+   FD #( .INIT(1'b0) ) XLXI_4 (.C(clock_P46), 
+              .D(b_P40_DUMMY), 
+              .Q(c_P35_DUMMY));
+   FD #( .INIT(1'b0) ) XLXI_5 (.C(clock_P46), 
+              .D(d_P34_DUMMY), 
+              .Q(e_P32_DUMMY));
+   FD #( .INIT(1'b0) ) XLXI_6 (.C(clock_P46), 
+              .D(c_P35_DUMMY), 
+              .Q(d_P34_DUMMY));
+   FD #( .INIT(1'b0) ) XLXI_12 (.C(clock_P46), 
+               .D(e_P32_DUMMY), 
+               .Q(f_P29_DUMMY));
+   FDP  XLXI_20 (.C(clock_P46), 
+                .D(f_P29_DUMMY), 
+                .PRE(common0_P44_DUMMY), 
+                .Q(a_P41_DUMMY));
+   GND  XLXI_21 (.G(common0_P44_DUMMY));
+   BUF  XLXI_26 (.I(vccLine), 
+                .O(common2_P33));
+   BUF  XLXI_27 (.I(vccLine), 
+                .O(common3_P30));
+   BUF  XLXI_28 (.I(vccLine), 
+                .O(com1_P43));
+   VCC  XLXI_30 (.P(vccLine));
+endmodule

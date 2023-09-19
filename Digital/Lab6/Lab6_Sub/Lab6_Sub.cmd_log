@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Sub/Lab6_Sub.xst" -ofn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Sub/Lab6_Sub.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6_Sub.ucf -p xc6slx9-tqg144-3 Lab6_Sub.ngc Lab6_Sub.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_Sub_map.ncd Lab6_Sub.ngd Lab6_Sub.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_Sub_map.ncd Lab6_Sub.ncd Lab6_Sub.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6_Sub.twx Lab6_Sub.ncd -o Lab6_Sub.twr Lab6_Sub.pcf -ucf Lab6_Sub.ucf 
+bitgen -intstyle ise -f Lab6_Sub.ut Lab6_Sub.ncd 
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Sub/Lab6_Sub.xst" -ofn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Sub/Lab6_Sub.syr" 
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Sub/Lab6_Sub.xst" -ofn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Sub/Lab6_Sub.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6_Sub.ucf -p xc6slx9-tqg144-3 Lab6_Sub.ngc Lab6_Sub.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_Sub_map.ncd Lab6_Sub.ngd Lab6_Sub.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_Sub_map.ncd Lab6_Sub.ncd Lab6_Sub.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6_Sub.twx Lab6_Sub.ncd -o Lab6_Sub.twr Lab6_Sub.pcf -ucf Lab6_Sub.ucf 
+bitgen -intstyle ise -f Lab6_Sub.ut Lab6_Sub.ncd 
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Sub/Lab6_Sub.xst" -ofn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Sub/Lab6_Sub.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6_Sub.ucf -p xc6slx9-tqg144-3 Lab6_Sub.ngc Lab6_Sub.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_Sub_map.ncd Lab6_Sub.ngd Lab6_Sub.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_Sub_map.ncd Lab6_Sub.ncd Lab6_Sub.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6_Sub.twx Lab6_Sub.ncd -o Lab6_Sub.twr Lab6_Sub.pcf -ucf Lab6_Sub.ucf 
+bitgen -intstyle ise -f Lab6_Sub.ut Lab6_Sub.ncd 

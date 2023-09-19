@@ -1,0 +1,59 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Lab5_3R.vf
+// /___/   /\     Timestamp : 08/07/2023 13:44:15
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/natta/OneDrive/Desktop/Digital/Lab5_3R/Lab5_3R.vf -w C:/Users/natta/OneDrive/Desktop/Digital/Lab5_3R/Lab5_3R.sch
+//Design Name: Lab5_3R
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Lab5_3R(INPUT_P7, 
+               INPUT_P9, 
+               INPUT_P11, 
+               INPUT_P14, 
+               INPUT_P16, 
+               INPUT_P21, 
+               Bz_P83, 
+               Led_P82);
+
+    input INPUT_P7;
+    input INPUT_P9;
+    input INPUT_P11;
+    input INPUT_P14;
+    input INPUT_P16;
+    input INPUT_P21;
+   output Bz_P83;
+   output Led_P82;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire Bz_P83_DUMMY;
+   
+   assign Bz_P83 = Bz_P83_DUMMY;
+   XOR5  XLXI_1 (.I0(INPUT_P21), 
+                .I1(INPUT_P16), 
+                .I2(INPUT_P14), 
+                .I3(INPUT_P11), 
+                .I4(INPUT_P9), 
+                .O(XLXN_1));
+   INV  XLXI_2 (.I(XLXN_1), 
+               .O(XLXN_2));
+   XOR2  XLXI_3 (.I0(XLXN_2), 
+                .I1(INPUT_P7), 
+                .O(Bz_P83_DUMMY));
+   INV  XLXI_4 (.I(Bz_P83_DUMMY), 
+               .O(Led_P82));
+endmodule

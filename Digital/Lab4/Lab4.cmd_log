@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/Digital/Lab4/Lab4.xst" -ofn "C:/Users/natta/OneDrive/Desktop/Digital/Lab4/Lab4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab4.ucf -p xc6slx9-tqg144-3 Lab4.ngc Lab4.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab4_map.ncd Lab4.ngd Lab4.pcf 
+par -w -intstyle ise -ol high -mt off Lab4_map.ncd Lab4.ncd Lab4.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab4.twx Lab4.ncd -o Lab4.twr Lab4.pcf -ucf Lab4.ucf 
+bitgen -intstyle ise -f Lab4.ut Lab4.ncd 
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/Digital/Lab4/Lab4.xst" -ofn "C:/Users/natta/OneDrive/Desktop/Digital/Lab4/Lab4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab4.ucf -p xc6slx9-tqg144-3 Lab4.ngc Lab4.ngd  
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/Digital/Lab4/Lab4.xst" -ofn "C:/Users/natta/OneDrive/Desktop/Digital/Lab4/Lab4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab4.ucf -p xc6slx9-tqg144-3 Lab4.ngc Lab4.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab4_map.ncd Lab4.ngd Lab4.pcf 
+par -w -intstyle ise -ol high -mt off Lab4_map.ncd Lab4.ncd Lab4.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab4.twx Lab4.ncd -o Lab4.twr Lab4.pcf -ucf Lab4.ucf 
+bitgen -intstyle ise -f Lab4.ut Lab4.ncd 

@@ -1,0 +1,20 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Sep 16 20:35:11 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "d_P34" LOCATE = SITE "P34" LEVEL 1;
+COMP "common2_P33" LOCATE = SITE "P33" LEVEL 1;
+COMP "e_P32" LOCATE = SITE "P32" LEVEL 1;
+COMP "common3_P30" LOCATE = SITE "P30" LEVEL 1;
+COMP "com1_P43" LOCATE = SITE "P43" LEVEL 1;
+COMP "f_P29" LOCATE = SITE "P29" LEVEL 1;
+COMP "a_P41" LOCATE = SITE "P41" LEVEL 1;
+COMP "clock_P46" LOCATE = SITE "P46" LEVEL 1;
+PIN clock_P46_pin<0> = BEL "clock_P46" PINNAME PAD;
+PIN "clock_P46_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "b_P40" LOCATE = SITE "P40" LEVEL 1;
+COMP "common0_P44" LOCATE = SITE "P44" LEVEL 1;
+COMP "c_P35" LOCATE = SITE "P35" LEVEL 1;
+SCHEMATIC END;
+

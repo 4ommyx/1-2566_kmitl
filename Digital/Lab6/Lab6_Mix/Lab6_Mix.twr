@@ -1,0 +1,124 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n 3
+-fastpaths -xml Lab6_Mix.twx Lab6_Mix.ncd -o Lab6_Mix.twr Lab6_Mix.pcf -ucf
+Lab6_Mix.ucf
+
+Design file:              Lab6_Mix.ncd
+Physical constraint file: Lab6_Mix.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Dip8_P99       |P27            |   14.966|
+Dip8_P99       |P29            |   14.942|
+Dip8_P99       |P32            |   14.525|
+Dip8_P99       |P34            |   14.510|
+Dip8_P99       |P35            |   14.819|
+Dip8_P99       |P40            |   14.989|
+Dip8_P99       |P41            |   14.957|
+Dip8_P99       |inv_Led0_P82   |   14.359|
+nA0_SW0_P66    |P27            |   12.150|
+nA0_SW0_P66    |P29            |   12.126|
+nA0_SW0_P66    |P32            |   11.709|
+nA0_SW0_P66    |P34            |   11.694|
+nA0_SW0_P66    |P35            |   12.003|
+nA0_SW0_P66    |P40            |   12.173|
+nA0_SW0_P66    |P41            |   12.141|
+nA0_SW0_P66    |inv_Led0_P82   |   11.543|
+nA1_SW1_P62    |P27            |   11.645|
+nA1_SW1_P62    |P29            |   11.621|
+nA1_SW1_P62    |P32            |   11.204|
+nA1_SW1_P62    |P34            |   11.189|
+nA1_SW1_P62    |P35            |   11.498|
+nA1_SW1_P62    |P40            |   11.668|
+nA1_SW1_P62    |P41            |   11.636|
+nA1_SW1_P62    |inv_Led0_P82   |   11.038|
+nA2_SW2_P61    |P27            |   11.190|
+nA2_SW2_P61    |P29            |   11.166|
+nA2_SW2_P61    |P32            |   10.749|
+nA2_SW2_P61    |P34            |   10.734|
+nA2_SW2_P61    |P35            |   11.043|
+nA2_SW2_P61    |P40            |   11.213|
+nA2_SW2_P61    |P41            |   11.181|
+nA2_SW2_P61    |inv_Led0_P82   |   10.583|
+nA3_SW3_P59    |P27            |    9.784|
+nA3_SW3_P59    |P29            |    9.760|
+nA3_SW3_P59    |P32            |    9.343|
+nA3_SW3_P59    |P34            |    9.328|
+nA3_SW3_P59    |P35            |    9.637|
+nA3_SW3_P59    |P40            |    9.807|
+nA3_SW3_P59    |P41            |    9.775|
+nA3_SW3_P59    |inv_Led0_P82   |    8.741|
+nB0_SW4_P58    |P27            |   12.282|
+nB0_SW4_P58    |P29            |   12.258|
+nB0_SW4_P58    |P32            |   11.841|
+nB0_SW4_P58    |P34            |   11.826|
+nB0_SW4_P58    |P35            |   12.135|
+nB0_SW4_P58    |P40            |   12.305|
+nB0_SW4_P58    |P41            |   12.273|
+nB0_SW4_P58    |inv_Led0_P82   |   11.675|
+nB1_SW5_P57    |P27            |   11.890|
+nB1_SW5_P57    |P29            |   11.866|
+nB1_SW5_P57    |P32            |   11.449|
+nB1_SW5_P57    |P34            |   11.434|
+nB1_SW5_P57    |P35            |   11.743|
+nB1_SW5_P57    |P40            |   11.913|
+nB1_SW5_P57    |P41            |   11.881|
+nB1_SW5_P57    |inv_Led0_P82   |   11.283|
+nB2_SW6_P56    |P27            |   11.288|
+nB2_SW6_P56    |P29            |   11.264|
+nB2_SW6_P56    |P32            |   10.847|
+nB2_SW6_P56    |P34            |   10.832|
+nB2_SW6_P56    |P35            |   11.141|
+nB2_SW6_P56    |P40            |   11.311|
+nB2_SW6_P56    |P41            |   11.279|
+nB2_SW6_P56    |inv_Led0_P82   |   10.681|
+nB3_SW7_P55    |P27            |    9.792|
+nB3_SW7_P55    |P29            |    9.768|
+nB3_SW7_P55    |P32            |    9.351|
+nB3_SW7_P55    |P34            |    9.336|
+nB3_SW7_P55    |P35            |    9.645|
+nB3_SW7_P55    |P40            |    9.815|
+nB3_SW7_P55    |P41            |    9.783|
+nB3_SW7_P55    |inv_Led0_P82   |    8.749|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Sep 04 15:10:43 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4572 MB
+
+
+

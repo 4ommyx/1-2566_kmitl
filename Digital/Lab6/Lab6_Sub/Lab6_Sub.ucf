@@ -1,0 +1,25 @@
+
+
+NET "inv_Led0_P82" LOC = P82;
+NET "nA0_SW0_P66" LOC = P66;
+NET "nA1_SW1_P62" LOC = P62;
+NET "nA2_SW2_P61" LOC = P61;
+NET "nA3_SW3_P59" LOC = P59;
+NET "nB0_SW4_P58" LOC = P58;
+NET "nB1_SW5_P57" LOC = P57;
+NET "nB2_SW6_P56" LOC = P56;
+NET "nB3_SW7_P55" LOC = P55;
+NET "sum0_Led4_P78" LOC = P78;
+NET "sum1_Led5_P75" LOC = P75;
+NET "sum2_Led6_P74" LOC = P74;
+NET "sum3_Led7_P67" LOC = P67;
+
+# PlanAhead Generated physical constraints 
+
+NET "P27" LOC = P27;
+NET "P29" LOC = P29;
+NET "P32" LOC = P32;
+NET "P34" LOC = P34;
+NET "P35" LOC = P35;
+NET "P40" LOC = P40;
+NET "P41" LOC = P41;

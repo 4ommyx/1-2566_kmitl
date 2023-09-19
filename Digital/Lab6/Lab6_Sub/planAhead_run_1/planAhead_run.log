@@ -1,0 +1,59 @@
+
+****** PlanAhead v14.7
+  **** Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Sub/pa.fromHdl.tcl
+# create_project -name Lab6_Sub -dir "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Sub/planAhead_run_1" -part xc6slx9tqg144-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "Lab6_Sub.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Sub/Lab6_Sub.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {SevenSig.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {HalfAdd.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {FullAdd.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Lab6_Sub.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top Lab6_Sub $srcset
+# add_files [list {Lab6_Sub.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-3
+Using Verific elaboration
+Parsing VHDL file "D:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Sub/Lab6_Sub.vf" into library work
+Loading clock regions from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from D:/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : D:/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Sub/Lab6_Sub.ucf]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'XLXI_18/XLXI_1' at site P78, Illegal to place instance XLXI_18/XLXI_1 on site P78 [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Sub/Lab6_Sub.ucf:13]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'XLXI_19/XLXI_11' at site P75, Illegal to place instance XLXI_19/XLXI_11 on site P75 [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Sub/Lab6_Sub.ucf:14]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'XLXI_20/XLXI_11' at site P74, Illegal to place instance XLXI_20/XLXI_11 on site P74 [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Sub/Lab6_Sub.ucf:15]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'XLXI_21/XLXI_11' at site P67, Illegal to place instance XLXI_21/XLXI_11 on site P67 [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Sub/Lab6_Sub.ucf:16]
+Finished Parsing UCF File [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Sub/Lab6_Sub.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 66acfa16
+open_rtl_design: Time (s): elapsed = 00:00:08 . Memory (MB): peak = 570.949 ; gain = 125.930
+update_compile_order -fileset sim_1
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sat Sep 02 23:47:36 2023...
+INFO: [Common 17-83] Releasing license: PlanAhead

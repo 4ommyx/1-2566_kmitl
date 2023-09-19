@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/Digital/Lab7/Lab7.xst" -ofn "C:/Users/natta/OneDrive/Desktop/Digital/Lab7/Lab7.syr" 
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/Digital/Lab7/Lab7.xst" -ofn "C:/Users/natta/OneDrive/Desktop/Digital/Lab7/Lab7.syr" 
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/Digital/Lab7/Lab7.xst" -ofn "C:/Users/natta/OneDrive/Desktop/Digital/Lab7/Lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab7.ucf -p xc6slx9-tqg144-3 Lab7.ngc Lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab7_map.ncd Lab7.ngd Lab7.pcf 
+par -w -intstyle ise -ol high -mt off Lab7_map.ncd Lab7.ncd Lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab7.twx Lab7.ncd -o Lab7.twr Lab7.pcf -ucf Lab7.ucf 
+bitgen -intstyle ise -f Lab7.ut Lab7.ncd 

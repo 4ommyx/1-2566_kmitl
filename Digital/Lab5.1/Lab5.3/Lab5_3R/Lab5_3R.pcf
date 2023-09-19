@@ -1,0 +1,15 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Aug 07 13:46:59 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "INPUT_P16" LOCATE = SITE "P16" LEVEL 1;
+COMP "Led_P82" LOCATE = SITE "P82" LEVEL 1;
+COMP "INPUT_P7" LOCATE = SITE "P7" LEVEL 1;
+COMP "INPUT_P9" LOCATE = SITE "P9" LEVEL 1;
+COMP "Bz_P83" LOCATE = SITE "P83" LEVEL 1;
+COMP "INPUT_P11" LOCATE = SITE "P11" LEVEL 1;
+COMP "INPUT_P21" LOCATE = SITE "P21" LEVEL 1;
+COMP "INPUT_P14" LOCATE = SITE "P14" LEVEL 1;
+SCHEMATIC END;
+

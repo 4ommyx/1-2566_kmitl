@@ -1,0 +1,67 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Lab5_3S.vf
+// /___/   /\     Timestamp : 08/07/2023 14:02:05
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/natta/OneDrive/Desktop/Digital/Lab5_3S/Lab5_3S/Lab5_3S.vf -w C:/Users/natta/OneDrive/Desktop/Digital/Lab5_3S/Lab5_3S/Lab5_3S.sch
+//Design Name: Lab5_3S
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Lab5_3S(SW0_P66, 
+               SW1_P62, 
+               SW2_P61, 
+               SW3_P59, 
+               SW4_P58, 
+               OUTPUT_P7, 
+               OUTPUT_P9, 
+               OUTPUT_P11, 
+               OUTPUT_P14, 
+               OUTPUT_P16, 
+               OUTPUT_P21);
+
+    input SW0_P66;
+    input SW1_P62;
+    input SW2_P61;
+    input SW3_P59;
+    input SW4_P58;
+   output OUTPUT_P7;
+   output OUTPUT_P9;
+   output OUTPUT_P11;
+   output OUTPUT_P14;
+   output OUTPUT_P16;
+   output OUTPUT_P21;
+   
+   wire XLXN_12;
+   
+   XOR5  XLXI_1 (.I0(SW0_P66), 
+                .I1(SW1_P62), 
+                .I2(SW2_P61), 
+                .I3(SW3_P59), 
+                .I4(SW4_P58), 
+                .O(XLXN_12));
+   INV  XLXI_2 (.I(XLXN_12), 
+               .O(OUTPUT_P7));
+   BUF  XLXI_3 (.I(SW4_P58), 
+               .O(OUTPUT_P9));
+   BUF  XLXI_4 (.I(SW3_P59), 
+               .O(OUTPUT_P11));
+   BUF  XLXI_5 (.I(SW2_P61), 
+               .O(OUTPUT_P14));
+   BUF  XLXI_6 (.I(SW1_P62), 
+               .O(OUTPUT_P16));
+   BUF  XLXI_7 (.I(SW0_P66), 
+               .O(OUTPUT_P21));
+endmodule

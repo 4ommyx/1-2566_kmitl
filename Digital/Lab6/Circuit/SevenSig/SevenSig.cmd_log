@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/SevenSig/SevenSig.xst" -ofn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/SevenSig/SevenSig.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 SevenSig.ngc SevenSig.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SevenSig_map.ncd SevenSig.ngd SevenSig.pcf 
+par -w -intstyle ise -ol high -mt off SevenSig_map.ncd SevenSig.ncd SevenSig.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml SevenSig.twx SevenSig.ncd -o SevenSig.twr SevenSig.pcf 
+bitgen -intstyle ise -f SevenSig.ut SevenSig.ncd 
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/SevenSig/SevenSig.xst" -ofn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/SevenSig/SevenSig.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SevenSig.ucf -p xc6slx9-tqg144-3 SevenSig.ngc SevenSig.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SevenSig_map.ncd SevenSig.ngd SevenSig.pcf 
+par -w -intstyle ise -ol high -mt off SevenSig_map.ncd SevenSig.ncd SevenSig.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml SevenSig.twx SevenSig.ncd -o SevenSig.twr SevenSig.pcf -ucf SevenSig.ucf 
+bitgen -intstyle ise -f SevenSig.ut SevenSig.ncd 
+sch2sym -intstyle ise -family spartan6 -refsym SevenSig C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/SevenSig/SevenSig.sch C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/SevenSig/SevenSig.sym 

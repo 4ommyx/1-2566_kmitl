@@ -1,0 +1,80 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n 3
+-fastpaths -xml SevenSig.twx SevenSig.ncd -o SevenSig.twr SevenSig.pcf -ucf
+SevenSig.ucf
+
+Design file:              SevenSig.ncd
+Physical constraint file: SevenSig.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+AA_P59         |a_P41          |    7.274|
+AA_P59         |b_P40          |    7.880|
+AA_P59         |c_P35          |    7.528|
+AA_P59         |d_P34          |    7.631|
+AA_P59         |e_P32          |    8.081|
+AA_P59         |f_P29          |    8.695|
+AA_P59         |g_P27          |    8.710|
+BB_P61         |a_P41          |    7.274|
+BB_P61         |b_P40          |    7.866|
+BB_P61         |c_P35          |    7.761|
+BB_P61         |d_P34          |    7.320|
+BB_P61         |e_P32          |    7.390|
+BB_P61         |f_P29          |    8.398|
+BB_P61         |g_P27          |    8.346|
+CC_P62         |a_P41          |    7.782|
+CC_P62         |b_P40          |    8.124|
+CC_P62         |c_P35          |    7.892|
+CC_P62         |d_P34          |    7.807|
+CC_P62         |e_P32          |    8.292|
+CC_P62         |f_P29          |    8.809|
+CC_P62         |g_P27          |    9.197|
+DD_P66         |a_P41          |    7.436|
+DD_P66         |b_P40          |    7.641|
+DD_P66         |c_P35          |    7.390|
+DD_P66         |d_P34          |    7.406|
+DD_P66         |e_P32          |    7.664|
+DD_P66         |f_P29          |    8.143|
+DD_P66         |g_P27          |    8.389|
+---------------+---------------+---------+
+
+
+Analysis completed Sat Sep 02 22:40:48 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4554 MB
+
+
+

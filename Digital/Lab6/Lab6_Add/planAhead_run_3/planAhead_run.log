@@ -1,0 +1,98 @@
+
+****** PlanAhead v14.7
+  **** Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/pa.fromHdl.tcl
+# create_project -name Lab6_Add -dir "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/planAhead_run_3" -part xc6slx9tqg144-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "Lab6_Add.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/Lab6_Add.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {SevenSig.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {HalfAdd.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {FullAdd.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Lab6_Add.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top Lab6_Add $srcset
+# add_files [list {Lab6_Add.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-3
+Using Verific elaboration
+Parsing VHDL file "D:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/Lab6_Add.vf" into library work
+Loading clock regions from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from D:/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : D:/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/Lab6_Add.ucf]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'nA0_SW0_P66' [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/Lab6_Add.ucf:3]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'nA1_SW1_P62' [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/Lab6_Add.ucf:4]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'nA2_SW2_P61' [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/Lab6_Add.ucf:5]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'nA3_SW3_P59' [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/Lab6_Add.ucf:6]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'nB0_SW4_P58' [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/Lab6_Add.ucf:7]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'nB1_SW5_P57' [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/Lab6_Add.ucf:8]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'nB2_SW6_P56' [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/Lab6_Add.ucf:9]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'nB3_SW7_P55' [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/Lab6_Add.ucf:10]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'overFlow_Led0_P82' [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/Lab6_Add.ucf:11]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 's0_Led4_P78' [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/Lab6_Add.ucf:12]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 's1_Led5_P75' [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/Lab6_Add.ucf:13]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 's2_Led6_P74' [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/Lab6_Add.ucf:14]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 's3_Led7_P67' [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/Lab6_Add.ucf:15]
+Finished Parsing UCF File [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/Lab6_Add.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: aa19fa48
+open_rtl_design: Time (s): elapsed = 00:00:09 . Memory (MB): peak = 555.777 ; gain = 112.215
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P66 [get_ports nA0_P66]
+endgroup
+startgroup
+set_property package_pin P62 [get_ports nA1_P62]
+endgroup
+startgroup
+set_property package_pin P61 [get_ports nA2_P61]
+endgroup
+startgroup
+set_property package_pin P59 [get_ports nA3_P59]
+endgroup
+startgroup
+set_property package_pin P58 [get_ports nB0_P58]
+endgroup
+startgroup
+set_property package_pin P57 [get_ports nB1_P57]
+endgroup
+startgroup
+set_property package_pin P56 [get_ports nB2_P56]
+endgroup
+startgroup
+set_property package_pin P55 [get_ports nB3_P55]
+endgroup
+startgroup
+set_property package_pin P82 [get_ports overFlow_P82]
+endgroup
+set_property is_loc_fixed false [get_ports [list  P32]]
+set_property is_loc_fixed true [get_ports [list  P32]]
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sat Sep 02 23:32:15 2023...
+INFO: [Common 17-83] Releasing license: PlanAhead

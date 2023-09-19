@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Sat Sep 02 23:48:45 2023
+# Process ID: 10124
+# Log file: C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Sub/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Sub/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Sub/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P27 [get_ports P27]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports P29]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports P32]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports P34]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports P35]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports P40]
+endgroup
+startgroup
+set_property package_pin P41 [get_ports P41]
+endgroup
+set_property is_loc_fixed false [get_ports [list  P41]]
+set_property is_loc_fixed true [get_ports [list  P41]]
+save_constraints

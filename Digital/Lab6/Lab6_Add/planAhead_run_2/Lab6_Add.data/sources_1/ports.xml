@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="nA0_SW0_P66" Dir="IN"/>
+		<Port Id="nA1_SW1_P62" Dir="IN"/>
+		<Port Id="nA2_SW2_P61" Dir="IN"/>
+		<Port Id="nA3_SW3_P59" Dir="IN"/>
+		<Port Id="nB0_SW4_P58" Dir="IN"/>
+		<Port Id="nB1_SW5_P57" Dir="IN"/>
+		<Port Id="nB2_SW6_P56" Dir="IN"/>
+		<Port Id="nB3_SW7_P55" Dir="IN"/>
+		<Port Id="overFlow_Led0_P82" Dir="OUT"/>
+		<Port Id="P27" Dir="OUT"/>
+		<Port Id="P29" Dir="OUT"/>
+		<Port Id="P32" Dir="OUT"/>
+		<Port Id="P34" Dir="OUT"/>
+		<Port Id="P35" Dir="OUT"/>
+		<Port Id="P40" Dir="OUT"/>
+		<Port Id="P41" Dir="OUT"/>
+		<Port Id="s0_Led4_P78" Dir="OUT"/>
+		<Port Id="s1_Led5_P75" Dir="OUT"/>
+		<Port Id="s2_Led6_P74" Dir="OUT"/>
+		<Port Id="s3_Led7_P67" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

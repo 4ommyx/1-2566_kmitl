@@ -1,0 +1,116 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n 3
+-fastpaths -xml Lab6_Add.twx Lab6_Add.ncd -o Lab6_Add.twr Lab6_Add.pcf -ucf
+Lab6_Add.ucf
+
+Design file:              Lab6_Add.ncd
+Physical constraint file: Lab6_Add.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+nA0_P66        |P27            |   10.568|
+nA0_P66        |P29            |   10.620|
+nA0_P66        |P32            |   10.271|
+nA0_P66        |P34            |   10.172|
+nA0_P66        |P35            |   10.123|
+nA0_P66        |P40            |   10.159|
+nA0_P66        |P41            |    9.981|
+nA0_P66        |overFlow_P82   |   10.016|
+nA1_P62        |P27            |    9.862|
+nA1_P62        |P29            |    9.914|
+nA1_P62        |P32            |    9.565|
+nA1_P62        |P34            |    9.466|
+nA1_P62        |P35            |    9.417|
+nA1_P62        |P40            |    9.453|
+nA1_P62        |P41            |    9.275|
+nA1_P62        |overFlow_P82   |    9.310|
+nA2_P61        |P27            |    9.418|
+nA2_P61        |P29            |    9.470|
+nA2_P61        |P32            |    9.121|
+nA2_P61        |P34            |    9.022|
+nA2_P61        |P35            |    8.973|
+nA2_P61        |P40            |    9.009|
+nA2_P61        |P41            |    9.003|
+nA2_P61        |overFlow_P82   |    8.866|
+nA3_P59        |P27            |    8.554|
+nA3_P59        |P29            |    8.606|
+nA3_P59        |P32            |    8.257|
+nA3_P59        |P34            |    8.158|
+nA3_P59        |P35            |    8.109|
+nA3_P59        |P40            |    8.145|
+nA3_P59        |P41            |    7.967|
+nA3_P59        |overFlow_P82   |    8.269|
+nB0_P58        |P27            |   10.387|
+nB0_P58        |P29            |   10.439|
+nB0_P58        |P32            |   10.090|
+nB0_P58        |P34            |    9.991|
+nB0_P58        |P35            |    9.942|
+nB0_P58        |P40            |    9.978|
+nB0_P58        |P41            |    9.800|
+nB0_P58        |overFlow_P82   |    9.835|
+nB1_P57        |P27            |    9.702|
+nB1_P57        |P29            |    9.754|
+nB1_P57        |P32            |    9.405|
+nB1_P57        |P34            |    9.306|
+nB1_P57        |P35            |    9.257|
+nB1_P57        |P40            |    9.293|
+nB1_P57        |P41            |    9.115|
+nB1_P57        |overFlow_P82   |    9.150|
+nB2_P56        |P27            |    9.065|
+nB2_P56        |P29            |    9.117|
+nB2_P56        |P32            |    8.768|
+nB2_P56        |P34            |    8.669|
+nB2_P56        |P35            |    8.620|
+nB2_P56        |P40            |    8.656|
+nB2_P56        |P41            |    8.478|
+nB2_P56        |overFlow_P82   |    8.513|
+nB3_P55        |P27            |    8.040|
+nB3_P55        |P29            |    8.092|
+nB3_P55        |P32            |    7.743|
+nB3_P55        |P34            |    7.644|
+nB3_P55        |P35            |    7.595|
+nB3_P55        |P40            |    7.631|
+nB3_P55        |P41            |    7.453|
+nB3_P55        |overFlow_P82   |    7.626|
+---------------+---------------+---------+
+
+
+Analysis completed Sat Sep 02 23:34:12 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4572 MB
+
+
+

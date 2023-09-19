@@ -1,0 +1,11 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "Bz_P83" LOC = P83;
+NET "INPUT_P7" LOC = P7;
+NET "INPUT_P9" LOC = P9;
+NET "INPUT_P11" LOC = P11;
+NET "INPUT_P14" LOC = P14;
+NET "INPUT_P16" LOC = P16;
+NET "INPUT_P21" LOC = P21;
+NET "Led_P82" LOC = P82;

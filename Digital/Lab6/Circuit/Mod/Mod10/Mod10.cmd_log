@@ -1,0 +1,27 @@
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod10/Mod10.xst" -ofn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod10/Mod10.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mod10.ucf -p xc6slx9-tqg144-3 Mod10.ngc Mod10.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Mod10_map.ncd Mod10.ngd Mod10.pcf 
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod10/Mod10.xst" -ofn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod10/Mod10.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mod10.ucf -p xc6slx9-tqg144-3 Mod10.ngc Mod10.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Mod10_map.ncd Mod10.ngd Mod10.pcf 
+par -w -intstyle ise -ol high -mt off Mod10_map.ncd Mod10.ncd Mod10.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mod10.twx Mod10.ncd -o Mod10.twr Mod10.pcf -ucf Mod10.ucf 
+bitgen -intstyle ise -f Mod10.ut Mod10.ncd 
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod10/Mod10.xst" -ofn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod10/Mod10.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mod10.ucf -p xc6slx9-tqg144-3 Mod10.ngc Mod10.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Mod10_map.ncd Mod10.ngd Mod10.pcf 
+par -w -intstyle ise -ol high -mt off Mod10_map.ncd Mod10.ncd Mod10.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mod10.twx Mod10.ncd -o Mod10.twr Mod10.pcf -ucf Mod10.ucf 
+bitgen -intstyle ise -f Mod10.ut Mod10.ncd 
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod10/Mod10.xst" -ofn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod10/Mod10.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mod10.ucf -p xc6slx9-tqg144-3 Mod10.ngc Mod10.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Mod10_map.ncd Mod10.ngd Mod10.pcf 
+par -w -intstyle ise -ol high -mt off Mod10_map.ncd Mod10.ncd Mod10.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mod10.twx Mod10.ncd -o Mod10.twr Mod10.pcf -ucf Mod10.ucf 
+bitgen -intstyle ise -f Mod10.ut Mod10.ncd 
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod10/Mod10.xst" -ofn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod10/Mod10.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mod10.ucf -p xc6slx9-tqg144-3 Mod10.ngc Mod10.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Mod10_map.ncd Mod10.ngd Mod10.pcf 
+par -w -intstyle ise -ol high -mt off Mod10_map.ncd Mod10.ncd Mod10.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mod10.twx Mod10.ncd -o Mod10.twr Mod10.pcf -ucf Mod10.ucf 
+sch2sym -intstyle ise -family spartan6 -refsym Mod10 C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod10/Mod10.sch C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod10/Mod10.sym 

@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod2/Mod2.xst" -ofn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod2/Mod2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mod2.ucf -p xc6slx9-tqg144-3 Mod2.ngc Mod2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Mod2_map.ncd Mod2.ngd Mod2.pcf 
+par -w -intstyle ise -ol high -mt off Mod2_map.ncd Mod2.ncd Mod2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mod2.twx Mod2.ncd -o Mod2.twr Mod2.pcf -ucf Mod2.ucf 
+sch2sym -intstyle ise -family spartan6 -refsym Mod2 C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod2/Mod2.sch C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod2/Mod2.sym 
+sch2sym -intstyle ise -family spartan6 -refsym Mod2 C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod2/Mod2.sch C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod2/Mod2.sym 
+sch2sym -intstyle ise -family spartan6 -refsym Mod2 C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod2/Mod2.sch C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod2/Mod2.sym 
+sch2sym -intstyle ise -family spartan6 -refsym Mod2 C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod2/Mod2.sch C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod2/Mod2.sym 
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod2/Mod2.xst" -ofn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod2/Mod2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mod2.ucf -p xc6slx9-tqg144-3 Mod2.ngc Mod2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Mod2_map.ncd Mod2.ngd Mod2.pcf 
+par -w -intstyle ise -ol high -mt off Mod2_map.ncd Mod2.ncd Mod2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mod2.twx Mod2.ncd -o Mod2.twr Mod2.pcf -ucf Mod2.ucf 
+sch2sym -intstyle ise -family spartan6 -refsym Mod2 C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod2/Mod2.sch C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod2/Mod2.sym 
+sch2sym -intstyle ise -family spartan6 -refsym Mod2 C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod2/Mod2.sch C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Mod/Mod2/Mod2.sym 

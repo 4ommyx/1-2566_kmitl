@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Lab5_2.vf
+// /___/   /\     Timestamp : 08/21/2023 11:38:09
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/natta/OneDrive/Desktop/Digital/Lab5.1/Lab5.1S/Lab5_2.vf -w C:/Users/natta/OneDrive/Desktop/Digital/Lab5.1/Lab5.1S/Lab5_2.sch
+//Design Name: Lab5_2
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Lab5_2(SW0_P66, 
+              SW1_P62, 
+              SW2_P61, 
+              OT0_P21, 
+              OT1_P16, 
+              OT2_P14);
+
+    input SW0_P66;
+    input SW1_P62;
+    input SW2_P61;
+   output OT0_P21;
+   output OT1_P16;
+   output OT2_P14;
+   
+   
+   BUF  XLXI_1 (.I(SW0_P66), 
+               .O(OT0_P21));
+   BUF  XLXI_2 (.I(SW1_P62), 
+               .O(OT1_P16));
+   BUF  XLXI_3 (.I(SW2_P61), 
+               .O(OT2_P14));
+endmodule

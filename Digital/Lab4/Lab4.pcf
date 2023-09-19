@@ -1,0 +1,12 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Aug 21 23:29:31 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "D_P66" LOCATE = SITE "P66" LEVEL 1;
+COMP "BZ" LOCATE = SITE "P83" LEVEL 1;
+COMP "A_P59" LOCATE = SITE "P59" LEVEL 1;
+COMP "B_P61" LOCATE = SITE "P61" LEVEL 1;
+COMP "C_P62" LOCATE = SITE "P62" LEVEL 1;
+SCHEMATIC END;
+

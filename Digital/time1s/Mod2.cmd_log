@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -refsym Mod2 C:/Users/natta/OneDrive/Desktop/Digital/time1s/Mod2.sch C:/Users/natta/OneDrive/Desktop/Digital/time1s/Mod2.sym 
+sch2sym -intstyle ise -family spartan6 -refsym Mod2 C:/Users/natta/OneDrive/Desktop/Digital/time1s/Mod2.sch C:/Users/natta/OneDrive/Desktop/Digital/time1s/Mod2.sym 

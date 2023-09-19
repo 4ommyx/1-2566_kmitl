@@ -1,0 +1,59 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Lab4.vf
+// /___/   /\     Timestamp : 08/21/2023 23:27:26
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/natta/OneDrive/Desktop/Digital/Lab4/Lab4.vf -w C:/Users/natta/OneDrive/Desktop/Digital/Lab4/Lab4.sch
+//Design Name: Lab4
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Lab4(A_P59, 
+            B_P61, 
+            C_P62, 
+            D_P66, 
+            BZ);
+
+    input A_P59;
+    input B_P61;
+    input C_P62;
+    input D_P66;
+   output BZ;
+   
+   wire XLXN_2;
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_10;
+   
+   AND2B2  XLXI_1 (.I0(D_P66), 
+                  .I1(B_P61), 
+                  .O(XLXN_8));
+   AND2  XLXI_2 (.I0(D_P66), 
+                .I1(B_P61), 
+                .O(XLXN_2));
+   AND3B2  XLXI_3 (.I0(C_P62), 
+                  .I1(B_P61), 
+                  .I2(A_P59), 
+                  .O(XLXN_9));
+   AND3B2  XLXI_4 (.I0(B_P61), 
+                  .I1(A_P59), 
+                  .I2(C_P62), 
+                  .O(XLXN_10));
+   OR4  XLXI_5 (.I0(XLXN_10), 
+               .I1(XLXN_9), 
+               .I2(XLXN_8), 
+               .I3(XLXN_2), 
+               .O(BZ));
+endmodule

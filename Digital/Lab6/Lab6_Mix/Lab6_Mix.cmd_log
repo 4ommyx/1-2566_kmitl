@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Mix/Lab6_Mix.xst" -ofn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Mix/Lab6_Mix.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6_Mix.ucf -p xc6slx9-tqg144-3 Lab6_Mix.ngc Lab6_Mix.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_Mix_map.ncd Lab6_Mix.ngd Lab6_Mix.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_Mix_map.ncd Lab6_Mix.ncd Lab6_Mix.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6_Mix.twx Lab6_Mix.ncd -o Lab6_Mix.twr Lab6_Mix.pcf -ucf Lab6_Mix.ucf 
+bitgen -intstyle ise -f Lab6_Mix.ut Lab6_Mix.ncd 
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Mix/Lab6_Mix.xst" -ofn "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Mix/Lab6_Mix.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6_Mix.ucf -p xc6slx9-tqg144-3 Lab6_Mix.ngc Lab6_Mix.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_Mix_map.ncd Lab6_Mix.ngd Lab6_Mix.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_Mix_map.ncd Lab6_Mix.ncd Lab6_Mix.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6_Mix.twx Lab6_Mix.ncd -o Lab6_Mix.twr Lab6_Mix.pcf -ucf Lab6_Mix.ucf 
+bitgen -intstyle ise -f Lab6_Mix.ut Lab6_Mix.ncd 

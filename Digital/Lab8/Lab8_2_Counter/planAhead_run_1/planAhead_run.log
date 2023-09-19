@@ -1,0 +1,76 @@
+
+****** PlanAhead v14.7
+  **** Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Lab8_2_Counter/pa.fromHdl.tcl
+# create_project -name Lab8_2_Counter -dir "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Lab8_2_Counter/planAhead_run_1" -part xc6slx9tqg144-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "Lab8_2_Counter.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Lab8_2_Counter/Lab8_2_Counter.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {SevenSig.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Lab8_2_Counter.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top Lab8_2_Counter $srcset
+# add_files [list {Lab8_2_Counter.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-3
+Using Verific elaboration
+Parsing VHDL file "D:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Lab8_2_Counter/Lab8_2_Counter.vf" into library work
+Loading clock regions from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from D:/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : D:/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Lab8_2_Counter/Lab8_2_Counter.ucf]
+Finished Parsing UCF File [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/Lab8_2_Counter/Lab8_2_Counter.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 56c5168d
+open_rtl_design: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 563.168 ; gain = 101.082
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P41 [get_ports a_P41]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports b_P40]
+endgroup
+set_property package_pin "" [get_ports [list  d_P34]]
+startgroup
+set_property package_pin P35 [get_ports c_P35]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports d_P34]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports e_P32]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports f_P29]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports g_P27]
+endgroup
+startgroup
+set_property package_pin P46 [get_ports PB2_P46]
+endgroup
+set_property package_pin "" [get_ports [list  QA_LSB]]
+set_property is_loc_fixed true [get_ports [list  f_P29]]
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sun Sep 17 10:36:49 2023...
+INFO: [Common 17-83] Releasing license: PlanAhead

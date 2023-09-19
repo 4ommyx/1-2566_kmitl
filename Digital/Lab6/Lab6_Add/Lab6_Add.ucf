@@ -1,0 +1,19 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "nA0_P66" LOC = P66;
+NET "nA1_P62" LOC = P62;
+NET "nA2_P61" LOC = P61;
+NET "nA3_P59" LOC = P59;
+NET "nB0_P58" LOC = P58;
+NET "nB1_P57" LOC = P57;
+NET "nB2_P56" LOC = P56;
+NET "nB3_P55" LOC = P55;
+NET "overFlow_P82" LOC = P82;
+NET "P32" LOC = P32;
+NET "P27" LOC = P27;
+NET "P29" LOC = P29;
+NET "P34" LOC = P34;
+NET "P35" LOC = P35;
+NET "P41" LOC = P41;
+NET "P40" LOC = P40;

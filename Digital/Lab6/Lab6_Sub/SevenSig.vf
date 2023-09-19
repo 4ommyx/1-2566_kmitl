@@ -1,0 +1,283 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : SevenSig.vf
+// /___/   /\     Timestamp : 09/02/2023 23:46:52
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Sub/SevenSig.vf -w C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Sub/SevenSig.sch
+//Design Name: SevenSig
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module OR6_HXILINX_SevenSig (O, I0, I1, I2, I3, I4, I5);
+    
+
+   output O;
+
+   input I0;
+   input I1;
+   input I2;
+   input I3;
+   input I4;
+   input I5;
+
+assign O = (I0 || I1 || I2 || I3 || I4 || I5);
+
+endmodule
+`timescale 1ns / 1ps
+
+module SevenSig(AA_P59, 
+                BB_P61, 
+                CC_P62, 
+                DD_P66, 
+                a_P41, 
+                b_P40, 
+                c_P35, 
+                d_P34, 
+                e_P32, 
+                f_P29, 
+                g_P27);
+
+    input AA_P59;
+    input BB_P61;
+    input CC_P62;
+    input DD_P66;
+   output a_P41;
+   output b_P40;
+   output c_P35;
+   output d_P34;
+   output e_P32;
+   output f_P29;
+   output g_P27;
+   
+   wire A;
+   wire Ainv;
+   wire B;
+   wire Binv;
+   wire C;
+   wire Cinv;
+   wire D;
+   wire Dinv;
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_21;
+   wire XLXN_22;
+   wire XLXN_23;
+   wire XLXN_24;
+   wire XLXN_25;
+   wire XLXN_26;
+   wire XLXN_27;
+   wire XLXN_29;
+   wire XLXN_30;
+   wire XLXN_31;
+   wire XLXN_32;
+   wire XLXN_33;
+   wire XLXN_34;
+   wire XLXN_35;
+   wire XLXN_36;
+   wire XLXN_37;
+   wire XLXN_39;
+   wire XLXN_40;
+   wire XLXN_41;
+   wire XLXN_42;
+   wire XLXN_253;
+   wire XLXN_254;
+   wire XLXN_255;
+   wire XLXN_256;
+   wire XLXN_257;
+   wire XLXN_258;
+   wire XLXN_259;
+   wire XLXN_260;
+   wire XLXN_261;
+   wire XLXN_262;
+   
+   (* HU_SET = "XLXI_1_1" *) 
+   OR6_HXILINX_SevenSig  XLXI_1 (.I0(XLXN_22), 
+                                .I1(XLXN_23), 
+                                .I2(XLXN_24), 
+                                .I3(XLXN_25), 
+                                .I4(XLXN_26), 
+                                .I5(XLXN_27), 
+                                .O(a_P41));
+   AND2  XLXI_6 (.I0(B), 
+                .I1(Ainv), 
+                .O(XLXN_261));
+   AND2  XLXI_7 (.I0(D), 
+                .I1(Cinv), 
+                .O(XLXN_260));
+   AND2  XLXI_8 (.I0(D), 
+                .I1(Ainv), 
+                .O(XLXN_259));
+   AND2  XLXI_9 (.I0(Cinv), 
+                .I1(Ainv), 
+                .O(XLXN_258));
+   AND2  XLXI_10 (.I0(Dinv), 
+                 .I1(Binv), 
+                 .O(XLXN_257));
+   AND2  XLXI_11 (.I0(Cinv), 
+                 .I1(Binv), 
+                 .O(XLXN_256));
+   AND3  XLXI_12 (.I0(D), 
+                 .I1(Cinv), 
+                 .I2(A), 
+                 .O(XLXN_255));
+   AND3  XLXI_13 (.I0(D), 
+                 .I1(C), 
+                 .I2(Ainv), 
+                 .O(XLXN_254));
+   AND2  XLXI_14 (.I0(C), 
+                 .I1(B), 
+                 .O(XLXN_22));
+   AND2  XLXI_15 (.I0(C), 
+                 .I1(Ainv), 
+                 .O(XLXN_24));
+   AND2  XLXI_16 (.I0(Dinv), 
+                 .I1(A), 
+                 .O(XLXN_23));
+   AND3  XLXI_17 (.I0(Dinv), 
+                 .I1(Cinv), 
+                 .I2(Ainv), 
+                 .O(XLXN_253));
+   AND2  XLXI_22 (.I0(Binv), 
+                 .I1(A), 
+                 .O(XLXN_262));
+   AND2  XLXI_26 (.I0(Dinv), 
+                 .I1(Binv), 
+                 .O(XLXN_25));
+   AND3  XLXI_27 (.I0(D), 
+                 .I1(B), 
+                 .I2(Ainv), 
+                 .O(XLXN_26));
+   AND3  XLXI_28 (.I0(Cinv), 
+                 .I1(Binv), 
+                 .I2(A), 
+                 .O(XLXN_27));
+   AND3  XLXI_30 (.I0(D), 
+                 .I1(Cinv), 
+                 .I2(B), 
+                 .O(XLXN_31));
+   AND3  XLXI_31 (.I0(Dinv), 
+                 .I1(C), 
+                 .I2(B), 
+                 .O(XLXN_32));
+   AND3  XLXI_32 (.I0(Dinv), 
+                 .I1(Binv), 
+                 .I2(Ainv), 
+                 .O(XLXN_21));
+   AND3  XLXI_33 (.I0(D), 
+                 .I1(C), 
+                 .I2(Binv), 
+                 .O(XLXN_29));
+   AND2  XLXI_34 (.I0(Cinv), 
+                 .I1(A), 
+                 .O(XLXN_30));
+   AND2  XLXI_40 (.I0(A), 
+                 .I1(C), 
+                 .O(XLXN_33));
+   AND2  XLXI_41 (.I0(A), 
+                 .I1(Binv), 
+                 .O(XLXN_41));
+   AND2  XLXI_42 (.I0(B), 
+                 .I1(Dinv), 
+                 .O(XLXN_40));
+   AND2  XLXI_43 (.I0(Cinv), 
+                 .I1(Dinv), 
+                 .O(XLXN_39));
+   AND2  XLXI_44 (.I0(C), 
+                 .I1(Dinv), 
+                 .O(XLXN_35));
+   AND2  XLXI_45 (.I0(A), 
+                 .I1(B), 
+                 .O(XLXN_34));
+   AND2  XLXI_50 (.I0(Binv), 
+                 .I1(Dinv), 
+                 .O(XLXN_36));
+   AND2  XLXI_51 (.I0(A), 
+                 .I1(C), 
+                 .O(XLXN_42));
+   AND2  XLXI_52 (.I0(A), 
+                 .I1(Binv), 
+                 .O(XLXN_4));
+   AND2  XLXI_53 (.I0(A), 
+                 .I1(D), 
+                 .O(XLXN_3));
+   AND2  XLXI_54 (.I0(Binv), 
+                 .I1(C), 
+                 .O(XLXN_1));
+   AND2  XLXI_55 (.I0(C), 
+                 .I1(Dinv), 
+                 .O(XLXN_2));
+   AND3  XLXI_56 (.I0(Ainv), 
+                 .I1(B), 
+                 .I2(Cinv), 
+                 .O(XLXN_37));
+   AND3  XLXI_57 (.I0(Ainv), 
+                 .I1(B), 
+                 .I2(Cinv), 
+                 .O(XLXN_5));
+   BUF  XLXI_75 (.I(DD_P66), 
+                .O(D));
+   BUF  XLXI_76 (.I(CC_P62), 
+                .O(C));
+   BUF  XLXI_77 (.I(BB_P61), 
+                .O(B));
+   BUF  XLXI_78 (.I(AA_P59), 
+                .O(A));
+   INV  XLXI_83 (.I(D), 
+                .O(Dinv));
+   INV  XLXI_84 (.I(C), 
+                .O(Cinv));
+   INV  XLXI_85 (.I(B), 
+                .O(Binv));
+   INV  XLXI_86 (.I(A), 
+                .O(Ainv));
+   OR5  XLXI_154 (.I0(XLXN_257), 
+                 .I1(XLXN_256), 
+                 .I2(XLXN_255), 
+                 .I3(XLXN_254), 
+                 .I4(XLXN_253), 
+                 .O(b_P40));
+   OR5  XLXI_156 (.I0(XLXN_262), 
+                 .I1(XLXN_261), 
+                 .I2(XLXN_260), 
+                 .I3(XLXN_259), 
+                 .I4(XLXN_258), 
+                 .O(c_P35));
+   OR5  XLXI_163 (.I0(XLXN_30), 
+                 .I1(XLXN_32), 
+                 .I2(XLXN_31), 
+                 .I3(XLXN_29), 
+                 .I4(XLXN_21), 
+                 .O(d_P34));
+   OR4  XLXI_175 (.I0(XLXN_33), 
+                 .I1(XLXN_34), 
+                 .I2(XLXN_35), 
+                 .I3(XLXN_36), 
+                 .O(e_P32));
+   OR5  XLXI_181 (.I0(XLXN_37), 
+                 .I1(XLXN_39), 
+                 .I2(XLXN_40), 
+                 .I3(XLXN_41), 
+                 .I4(XLXN_42), 
+                 .O(f_P29));
+   OR5  XLXI_182 (.I0(XLXN_5), 
+                 .I1(XLXN_4), 
+                 .I2(XLXN_3), 
+                 .I3(XLXN_1), 
+                 .I4(XLXN_2), 
+                 .O(g_P27));
+endmodule

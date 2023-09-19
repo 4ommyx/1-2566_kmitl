@@ -1,0 +1,14 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Sep 18 23:23:16 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "A" LOCATE = SITE "P79" LEVEL 1;
+COMP "B" LOCATE = SITE "P80" LEVEL 1;
+COMP "C" LOCATE = SITE "P81" LEVEL 1;
+COMP "D" LOCATE = SITE "P82" LEVEL 1;
+COMP "PB2_P46" LOCATE = SITE "P46" LEVEL 1;
+PIN PB2_P46_pin<0> = BEL "PB2_P46" PINNAME PAD;
+PIN "PB2_P46_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+SCHEMATIC END;
+

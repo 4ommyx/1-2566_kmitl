@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/Digital/Lab5.1/Lab5.1S/Lab5_2.xst" -ofn "C:/Users/natta/OneDrive/Desktop/Digital/Lab5.1/Lab5.1S/Lab5_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab5_2.ucf -p xc6slx9-tqg144-3 Lab5_2.ngc Lab5_2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab5_2_map.ncd Lab5_2.ngd Lab5_2.pcf 
+par -w -intstyle ise -ol high -mt off Lab5_2_map.ncd Lab5_2.ncd Lab5_2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab5_2.twx Lab5_2.ncd -o Lab5_2.twr Lab5_2.pcf -ucf Lab5_2.ucf 

@@ -1,0 +1,4 @@
+verilog work "SevenSig.vf"
+verilog work "HalfAdd.vf"
+verilog work "FullAdd.vf"
+verilog work "Lab6_Add.vf"

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="SW0_P66" Dir="IN"/>
+		<Port Id="SW1_P62" Dir="IN"/>
+		<Port Id="SW2_P61" Dir="IN"/>
+		<Port Id="SW3_P59" Dir="IN"/>
+		<Port Id="SW4_P58" Dir="IN"/>
+		<Port Id="OUTPUT_P7" Dir="OUT"/>
+		<Port Id="OUTPUT_P9" Dir="OUT"/>
+		<Port Id="OUTPUT_P11" Dir="OUT"/>
+		<Port Id="OUTPUT_P14" Dir="OUT"/>
+		<Port Id="OUTPUT_P16" Dir="OUT"/>
+		<Port Id="OUTPUT_P21" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

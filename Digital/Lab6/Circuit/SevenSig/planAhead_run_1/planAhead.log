@@ -1,0 +1,88 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Sat Sep 02 22:37:30 2023
+# Process ID: 6032
+# Log file: C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/SevenSig/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/SevenSig/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/SevenSig/pa.fromHdl.tcl
+# create_project -name SevenSig -dir "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/SevenSig/planAhead_run_1" -part xc6slx9tqg144-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "SevenSig.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/SevenSig/SevenSig.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {SevenSig.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top SevenSig $srcset
+# add_files [list {SevenSig.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-3
+Using Verific elaboration
+Parsing VHDL file "D:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/SevenSig/SevenSig.vf" into library work
+Loading clock regions from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from D:/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from D:/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : D:/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/SevenSig/SevenSig.ucf]
+Finished Parsing UCF File [C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/SevenSig/SevenSig.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 85318488
+open_rtl_design: Time (s): elapsed = 00:00:07 . Memory (MB): peak = 558.250 ; gain = 124.133
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P41 [get_ports a_P41]
+endgroup
+startgroup
+set_property package_pin P59 [get_ports AA_P59]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports b_P40]
+endgroup
+startgroup
+set_property package_pin P61 [get_ports BB_P61]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports c_P35]
+endgroup
+startgroup
+set_property package_pin P62 [get_ports CC_P62]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports d_P34]
+endgroup
+startgroup
+set_property package_pin P66 [get_ports DD_P66]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports e_P32]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports f_P29]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports g_P27]
+endgroup
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+ (See C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Circuit/SevenSig\planAhead_pid6032.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sat Sep 02 22:40:12 2023...
+INFO: [Common 17-83] Releasing license: PlanAhead

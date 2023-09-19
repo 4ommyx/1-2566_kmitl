@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Sat Sep 16 23:28:26 2023
+# Process ID: 20988
+# Log file: C:/Users/natta/OneDrive/Desktop/Digital/Lab8/Lab8_1_Mod/planAhead_run_3/planAhead.log
+# Journal file: C:/Users/natta/OneDrive/Desktop/Digital/Lab8/Lab8_1_Mod/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/natta/OneDrive/Desktop/Digital/Lab8/Lab8_1_Mod/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P46 [get_ports Clock_PB2_P46]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports com1_P43]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports com2_P33]
+endgroup
+startgroup
+set_property package_pin P30 [get_ports com3_P30]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports Common0_P44]
+endgroup
+save_constraints

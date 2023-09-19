@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Sat Sep 02 23:30:59 2023
+# Process ID: 16624
+# Log file: C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/planAhead_run_3/planAhead.log
+# Journal file: C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/natta/OneDrive/Desktop/Digital/Lab6/Lab6_Add/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P66 [get_ports nA0_P66]
+endgroup
+startgroup
+set_property package_pin P62 [get_ports nA1_P62]
+endgroup
+startgroup
+set_property package_pin P61 [get_ports nA2_P61]
+endgroup
+startgroup
+set_property package_pin P59 [get_ports nA3_P59]
+endgroup
+startgroup
+set_property package_pin P58 [get_ports nB0_P58]
+endgroup
+startgroup
+set_property package_pin P57 [get_ports nB1_P57]
+endgroup
+startgroup
+set_property package_pin P56 [get_ports nB2_P56]
+endgroup
+startgroup
+set_property package_pin P55 [get_ports nB3_P55]
+endgroup
+startgroup
+set_property package_pin P82 [get_ports overFlow_P82]
+endgroup
+set_property is_loc_fixed false [get_ports [list  P32]]
+set_property is_loc_fixed true [get_ports [list  P32]]
+save_constraints
