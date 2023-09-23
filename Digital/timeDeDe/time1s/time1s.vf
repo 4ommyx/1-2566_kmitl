@@ -1,0 +1,174 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : time1s.vf
+// /___/   /\     Timestamp : 09/20/2023 22:00:59
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/natta/OneDrive/Desktop/1_2566/Digital/timeDeDe/time1s/time1s.vf -w C:/Users/natta/OneDrive/Desktop/1_2566/Digital/timeDeDe/time1s/time1s.sch
+//Design Name: time1s
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_time1s(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module Mod10_MUSER_time1s(CLK, 
+                          CLK_Mod10);
+
+    input CLK;
+   output CLK_Mod10;
+   
+   wire XLXN_1;
+   wire XLXN_5;
+   wire XLXN_7;
+   wire XLXN_13;
+   wire XLXN_19;
+   wire XLXN_21;
+   wire XLXN_22;
+   wire XLXN_25;
+   wire XLXN_26;
+   wire XLXN_32;
+   wire XLXN_68;
+   wire CLK_Mod10_DUMMY;
+   
+   assign CLK_Mod10 = CLK_Mod10_DUMMY;
+   (* HU_SET = "XLXI_1_1" *) 
+   FJKC_HXILINX_time1s  XLXI_1 (.C(CLK), 
+                               .CLR(XLXN_5), 
+                               .J(XLXN_1), 
+                               .K(XLXN_1), 
+                               .Q(XLXN_22));
+   (* HU_SET = "XLXI_2_0" *) 
+   FJKC_HXILINX_time1s  XLXI_2 (.C(CLK), 
+                               .CLR(XLXN_5), 
+                               .J(XLXN_7), 
+                               .K(XLXN_7), 
+                               .Q(XLXN_13));
+   (* HU_SET = "XLXI_3_2" *) 
+   FJKC_HXILINX_time1s  XLXI_3 (.C(CLK), 
+                               .CLR(XLXN_5), 
+                               .J(XLXN_21), 
+                               .K(XLXN_21), 
+                               .Q(XLXN_19));
+   VCC  XLXI_4 (.P(XLXN_1));
+   GND  XLXI_7 (.G(XLXN_5));
+   AND2  XLXI_8 (.I0(XLXN_68), 
+                .I1(XLXN_22), 
+                .O(XLXN_7));
+   AND2  XLXI_9 (.I0(XLXN_13), 
+                .I1(XLXN_22), 
+                .O(XLXN_21));
+   AND2  XLXI_10 (.I0(XLXN_19), 
+                 .I1(XLXN_21), 
+                 .O(XLXN_25));
+   (* HU_SET = "XLXI_11_3" *) 
+   FJKC_HXILINX_time1s  XLXI_11 (.C(CLK), 
+                                .CLR(XLXN_5), 
+                                .J(XLXN_32), 
+                                .K(XLXN_32), 
+                                .Q(CLK_Mod10_DUMMY));
+   AND2  XLXI_12 (.I0(XLXN_22), 
+                 .I1(CLK_Mod10_DUMMY), 
+                 .O(XLXN_26));
+   OR2  XLXI_13 (.I0(XLXN_25), 
+                .I1(XLXN_26), 
+                .O(XLXN_32));
+   INV  XLXI_25 (.I(CLK_Mod10_DUMMY), 
+                .O(XLXN_68));
+endmodule
+`timescale 1ns / 1ps
+
+module Mod2_MUSER_time1s(CLK, 
+                         CLK_Mod2);
+
+    input CLK;
+   output CLK_Mod2;
+   
+   wire XLXN_4;
+   wire CLK_Mod2_DUMMY;
+   
+   assign CLK_Mod2 = CLK_Mod2_DUMMY;
+   FD #( .INIT(1'b0) ) XLXI_1 (.C(CLK), 
+              .D(XLXN_4), 
+              .Q(CLK_Mod2_DUMMY));
+   INV  XLXI_2 (.I(CLK_Mod2_DUMMY), 
+               .O(XLXN_4));
+endmodule
+`timescale 1ns / 1ps
+
+module time1s(P123, 
+              CLK1s);
+
+    input P123;
+   output CLK1s;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_6;
+   wire XLXN_12;
+   wire XLXN_13;
+   
+   Mod2_MUSER_time1s  XLXI_1 (.CLK(P123), 
+                             .CLK_Mod2(XLXN_1));
+   Mod10_MUSER_time1s  XLXI_2 (.CLK(XLXN_1), 
+                              .CLK_Mod10(XLXN_2));
+   Mod10_MUSER_time1s  XLXI_3 (.CLK(XLXN_2), 
+                              .CLK_Mod10(XLXN_3));
+   Mod10_MUSER_time1s  XLXI_4 (.CLK(XLXN_3), 
+                              .CLK_Mod10(XLXN_4));
+   Mod10_MUSER_time1s  XLXI_5 (.CLK(XLXN_4), 
+                              .CLK_Mod10(XLXN_6));
+   Mod10_MUSER_time1s  XLXI_6 (.CLK(XLXN_12), 
+                              .CLK_Mod10(XLXN_13));
+   Mod10_MUSER_time1s  XLXI_7 (.CLK(XLXN_6), 
+                              .CLK_Mod10(XLXN_12));
+   Mod10_MUSER_time1s  XLXI_8 (.CLK(XLXN_13), 
+                              .CLK_Mod10(CLK1s));
+endmodule

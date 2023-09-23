@@ -1,0 +1,88 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : four2to1DMUX.vf
+// /___/   /\     Timestamp : 09/24/2023 01:18:42
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab9/four2to1DMUX.vf -w C:/Users/natta/OneDrive/Desktop/four2to1DMUX.sch
+//Design Name: four2to1DMUX
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module four2to1DMUX(A, 
+                    B, 
+                    C, 
+                    D, 
+                    S, 
+                    LED_A, 
+                    LED_B, 
+                    LED_C, 
+                    LED_D, 
+                    segment_A, 
+                    segment_B, 
+                    segment_C, 
+                    segment_D);
+
+    input A;
+    input B;
+    input C;
+    input D;
+    input S;
+   output LED_A;
+   output LED_B;
+   output LED_C;
+   output LED_D;
+   output segment_A;
+   output segment_B;
+   output segment_C;
+   output segment_D;
+   
+   wire XLXN_9;
+   wire XLXN_15;
+   wire XLXN_33;
+   wire XLXN_39;
+   
+   AND2  XLXI_1 (.I0(XLXN_9), 
+                .I1(D), 
+                .O(LED_D));
+   AND2  XLXI_2 (.I0(S), 
+                .I1(D), 
+                .O(segment_D));
+   INV  XLXI_3 (.I(S), 
+               .O(XLXN_9));
+   AND2  XLXI_8 (.I0(XLXN_15), 
+                .I1(C), 
+                .O(LED_C));
+   AND2  XLXI_9 (.I0(S), 
+                .I1(C), 
+                .O(segment_C));
+   INV  XLXI_10 (.I(S), 
+                .O(XLXN_15));
+   AND2  XLXI_17 (.I0(XLXN_33), 
+                 .I1(B), 
+                 .O(LED_B));
+   AND2  XLXI_18 (.I0(S), 
+                 .I1(B), 
+                 .O(segment_B));
+   INV  XLXI_19 (.I(S), 
+                .O(XLXN_33));
+   AND2  XLXI_20 (.I0(XLXN_39), 
+                 .I1(A), 
+                 .O(LED_A));
+   AND2  XLXI_21 (.I0(S), 
+                 .I1(A), 
+                 .O(segment_A));
+   INV  XLXI_22 (.I(S), 
+                .O(XLXN_39));
+endmodule

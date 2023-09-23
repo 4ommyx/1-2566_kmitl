@@ -1,0 +1,38 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Mod2.vf
+// /___/   /\     Timestamp : 09/24/2023 02:04:54
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab8/Lab8_2Counter2/Mod2.vf -w C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab8/Lab8_2Counter2/Mod2.sch
+//Design Name: Mod2
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Mod2(CLK, 
+            CLK_Mod2);
+
+    input CLK;
+   output CLK_Mod2;
+   
+   wire XLXN_4;
+   wire CLK_Mod2_DUMMY;
+   
+   assign CLK_Mod2 = CLK_Mod2_DUMMY;
+   FD #( .INIT(1'b0) ) XLXI_1 (.C(CLK), 
+              .D(XLXN_4), 
+              .Q(CLK_Mod2_DUMMY));
+   INV  XLXI_2 (.I(CLK_Mod2_DUMMY), 
+               .O(XLXN_4));
+endmodule

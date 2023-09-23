@@ -1,0 +1,41 @@
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab8/Lab8_2Counter2/Lab8_2counter2.xst" -ofn "C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab8/Lab8_2Counter2/Lab8_2counter2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab8_2counter2.ucf -p xc6slx9-tqg144-3 Lab8_2counter2.ngc Lab8_2counter2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab8_2counter2_map.ncd Lab8_2counter2.ngd Lab8_2counter2.pcf 
+par -w -intstyle ise -ol high -mt off Lab8_2counter2_map.ncd Lab8_2counter2.ncd Lab8_2counter2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab8_2counter2.twx Lab8_2counter2.ncd -o Lab8_2counter2.twr Lab8_2counter2.pcf -ucf Lab8_2counter2.ucf 
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab8/Lab8_2Counter2/Lab8_2counter2.xst" -ofn "C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab8/Lab8_2Counter2/Lab8_2counter2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab8_2counter2.ucf -p xc6slx9-tqg144-3 Lab8_2counter2.ngc Lab8_2counter2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab8_2counter2_map.ncd Lab8_2counter2.ngd Lab8_2counter2.pcf 
+par -w -intstyle ise -ol high -mt off Lab8_2counter2_map.ncd Lab8_2counter2.ncd Lab8_2counter2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab8_2counter2.twx Lab8_2counter2.ncd -o Lab8_2counter2.twr Lab8_2counter2.pcf -ucf Lab8_2counter2.ucf 
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab8/Lab8_2Counter2/Lab8_2counter2.xst" -ofn "C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab8/Lab8_2Counter2/Lab8_2counter2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab8_2counter2.ucf -p xc6slx9-tqg144-3 Lab8_2counter2.ngc Lab8_2counter2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab8_2counter2_map.ncd Lab8_2counter2.ngd Lab8_2counter2.pcf 
+par -w -intstyle ise -ol high -mt off Lab8_2counter2_map.ncd Lab8_2counter2.ncd Lab8_2counter2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab8_2counter2.twx Lab8_2counter2.ncd -o Lab8_2counter2.twr Lab8_2counter2.pcf -ucf Lab8_2counter2.ucf 
+bitgen -intstyle ise -f Lab8_2counter2.ut Lab8_2counter2.ncd 
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab8/Lab8_2Counter2/Lab8_2counter2.xst" -ofn "C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab8/Lab8_2Counter2/Lab8_2counter2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab8_2counter2.ucf -p xc6slx9-tqg144-3 Lab8_2counter2.ngc Lab8_2counter2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab8_2counter2_map.ncd Lab8_2counter2.ngd Lab8_2counter2.pcf 
+par -w -intstyle ise -ol high -mt off Lab8_2counter2_map.ncd Lab8_2counter2.ncd Lab8_2counter2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab8_2counter2.twx Lab8_2counter2.ncd -o Lab8_2counter2.twr Lab8_2counter2.pcf -ucf Lab8_2counter2.ucf 
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab8/Lab8_2Counter2/Lab8_2counter2.xst" -ofn "C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab8/Lab8_2Counter2/Lab8_2counter2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab8_2counter2.ucf -p xc6slx9-tqg144-3 Lab8_2counter2.ngc Lab8_2counter2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab8_2counter2_map.ncd Lab8_2counter2.ngd Lab8_2counter2.pcf 
+par -w -intstyle ise -ol high -mt off Lab8_2counter2_map.ncd Lab8_2counter2.ncd Lab8_2counter2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab8_2counter2.twx Lab8_2counter2.ncd -o Lab8_2counter2.twr Lab8_2counter2.pcf -ucf Lab8_2counter2.ucf 
+bitgen -intstyle ise -f Lab8_2counter2.ut Lab8_2counter2.ncd 
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab8/Lab8_2Counter2/Lab8_2counter2.xst" -ofn "C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab8/Lab8_2Counter2/Lab8_2counter2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab8_2counter2.ucf -p xc6slx9-tqg144-3 Lab8_2counter2.ngc Lab8_2counter2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab8_2counter2_map.ncd Lab8_2counter2.ngd Lab8_2counter2.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab8_2counter2.ucf -p xc6slx9-tqg144-3 Lab8_2counter2.ngc Lab8_2counter2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab8_2counter2_map.ncd Lab8_2counter2.ngd Lab8_2counter2.pcf 
+par -w -intstyle ise -ol high -mt off Lab8_2counter2_map.ncd Lab8_2counter2.ncd Lab8_2counter2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab8_2counter2.twx Lab8_2counter2.ncd -o Lab8_2counter2.twr Lab8_2counter2.pcf -ucf Lab8_2counter2.ucf 
+bitgen -intstyle ise -f Lab8_2counter2.ut Lab8_2counter2.ncd 
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab8/Lab8_2Counter2/Lab8_2counter2.xst" -ofn "C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab8/Lab8_2Counter2/Lab8_2counter2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab8_2counter2.ucf -p xc6slx9-tqg144-3 Lab8_2counter2.ngc Lab8_2counter2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab8_2counter2_map.ncd Lab8_2counter2.ngd Lab8_2counter2.pcf 
+par -w -intstyle ise -ol high -mt off Lab8_2counter2_map.ncd Lab8_2counter2.ncd Lab8_2counter2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab8_2counter2.twx Lab8_2counter2.ncd -o Lab8_2counter2.twr Lab8_2counter2.pcf -ucf Lab8_2counter2.ucf 
+bitgen -intstyle ise -f Lab8_2counter2.ut Lab8_2counter2.ncd 

@@ -1,0 +1,10 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "CLK" LOC = P46;
+NET "D0" LOC = P82;
+NET "D1" LOC = P81;
+NET "D2" LOC = P80;
+NET "D3" LOC = P79;
+NET "Button" LOC = P47;
+NET "CLK" CLOCK_DEDICATED_ROUTE = FALSE;

@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Sun Sep 24 02:07:47 2023
+# Process ID: 14260
+# Log file: C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab8/Lab8_2Counter2/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab8/Lab8_2Counter2/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab8/Lab8_2Counter2/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P41 [get_ports a_P41]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports b_P40]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports c_P35]
+endgroup
+startgroup
+set_property package_pin P123 [get_ports clk_P123]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports com0_P44]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports com1_P43]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports com2_P33]
+endgroup
+startgroup
+set_property package_pin P30 [get_ports com3_P30]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports d_P34]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports e_P32]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports f_P29]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports g_P27]
+endgroup
+save_constraints

@@ -1,0 +1,99 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Lab9_4bitTo8led.vf
+// /___/   /\     Timestamp : 09/24/2023 01:18:43
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab9/Lab9_4bitTo8led.vf -w C:/Users/natta/OneDrive/Desktop/Lab9_4bitTo8Led/Lab9_4bitTo8led.sch
+//Design Name: Lab9_4bitTo8led
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Lab9_4bitTo8led(D0, 
+                       D1, 
+                       D2, 
+                       D3, 
+                       L0, 
+                       L1, 
+                       L2, 
+                       L3, 
+                       L4, 
+                       L5, 
+                       L6, 
+                       L7);
+
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+   output L0;
+   output L1;
+   output L2;
+   output L3;
+   output L4;
+   output L5;
+   output L6;
+   output L7;
+   
+   wire XLXN_24;
+   wire XLXN_35;
+   wire XLXN_36;
+   wire XLXN_39;
+   wire XLXN_44;
+   
+   OR4  XLXI_5 (.I0(D0), 
+               .I1(D1), 
+               .I2(D2), 
+               .I3(D3), 
+               .O(L0));
+   OR3  XLXI_6 (.I0(D1), 
+               .I1(D2), 
+               .I2(D3), 
+               .O(L1));
+   AND2  XLXI_7 (.I0(D0), 
+                .I1(D1), 
+                .O(XLXN_24));
+   OR3  XLXI_8 (.I0(XLXN_24), 
+               .I1(D3), 
+               .I2(D2), 
+               .O(L2));
+   OR2  XLXI_9 (.I0(D2), 
+               .I1(D3), 
+               .O(L3));
+   AND2  XLXI_10 (.I0(D0), 
+                 .I1(D2), 
+                 .O(XLXN_35));
+   AND2  XLXI_11 (.I0(D1), 
+                 .I1(D2), 
+                 .O(XLXN_36));
+   OR3  XLXI_12 (.I0(XLXN_36), 
+                .I1(XLXN_35), 
+                .I2(D3), 
+                .O(L4));
+   AND2  XLXI_13 (.I0(D1), 
+                 .I1(D2), 
+                 .O(XLXN_39));
+   OR2  XLXI_14 (.I0(D3), 
+                .I1(XLXN_39), 
+                .O(L5));
+   AND3  XLXI_15 (.I0(D0), 
+                 .I1(D1), 
+                 .I2(D2), 
+                 .O(XLXN_44));
+   OR2  XLXI_16 (.I0(D3), 
+                .I1(XLXN_44), 
+                .O(L6));
+   BUF  XLXI_17 (.I(D3), 
+                .O(L7));
+endmodule

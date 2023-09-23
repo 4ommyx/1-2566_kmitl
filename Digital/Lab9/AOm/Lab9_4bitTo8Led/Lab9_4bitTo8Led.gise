@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Lab9_4bitTo8Led.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Lab9_4bitTo8led.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Lab9_4bitTo8led.cmd_log"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="Lab9_4bitTo8led.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Lab9_4bitTo8led.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Lab9_4bitTo8led.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Lab9_4bitTo8led.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Lab9_4bitTo8led.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Lab9_4bitTo8led.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Lab9_4bitTo8led.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="Lab9_4bitTo8led.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="Lab9_4bitTo8led.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Lab9_4bitTo8led.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="Lab9_4bitTo8led.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Lab9_4bitTo8led.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Lab9_4bitTo8led.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Lab9_4bitTo8led.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="Lab9_4bitTo8led.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Lab9_4bitTo8led.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Lab9_4bitTo8led.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="Lab9_4bitTo8led.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="Lab9_4bitTo8led.vf"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="Lab9_4bitTo8led.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Lab9_4bitTo8led.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="Lab9_4bitTo8led_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Lab9_4bitTo8led_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Lab9_4bitTo8led_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Lab9_4bitTo8led_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="Lab9_4bitTo8led_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Lab9_4bitTo8led_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Lab9_4bitTo8led_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Lab9_4bitTo8led_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Lab9_4bitTo8led_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Lab9_4bitTo8led_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Lab9_4bitTo8led_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Lab9_4bitTo8led_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Lab9_4bitTo8led_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Lab9_4bitTo8led_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="lab9_4bitto8led.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="lab9_4bitto8led.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="lab9_4bitto8led.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1695215119" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1695215119">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1695215121" xil_pn:in_ck="4607003314828368086" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="7376298686401146744" xil_pn:start_ts="1695215119">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1695215121" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-7870807422871465169" xil_pn:start_ts="1695215121">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1695215121" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1695215121">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1695215121" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="3551954249936503994" xil_pn:start_ts="1695215121">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1695215121" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745955965653" xil_pn:start_ts="1695215121">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1695215121" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="8060496737949142969" xil_pn:start_ts="1695215121">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1695215129" xil_pn:in_ck="-4891324040865381612" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-6386535714038371209" xil_pn:start_ts="1695215121">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led.jhd"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led.lso"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led.ngc"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led.ngr"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led.prj"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led.stx"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led.syr"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led.xst"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1695215129" xil_pn:in_ck="4607003314828370262" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-1325150701668071604" xil_pn:start_ts="1695215129">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1695215135" xil_pn:in_ck="-1377550151240053914" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-6685182756699512272" xil_pn:start_ts="1695215129">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led.bld"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led.ngd"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1695215142" xil_pn:in_ck="-7092407544241178169" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="6093601622908603872" xil_pn:start_ts="1695215135">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led.pcf"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led_map.map"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led_map.mrp"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led_map.ncd"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led_map.ngm"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led_map.xrpt"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led_summary.xml"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1695215152" xil_pn:in_ck="8826368616028693568" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-6780099238861732004" xil_pn:start_ts="1695215142">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led.ncd"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led.pad"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led.par"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led.ptwx"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led.unroutes"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led.xpi"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led_pad.csv"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led_pad.txt"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1695215185" xil_pn:in_ck="4607003314828362637" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1695215177">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="lab9_4bitto8led.bgn"/>
+      <outfile xil_pn:name="lab9_4bitto8led.bit"/>
+      <outfile xil_pn:name="lab9_4bitto8led.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1695215152" xil_pn:in_ck="-9047738690184392765" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1695215148">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led.twr"/>
+      <outfile xil_pn:name="Lab9_4bitTo8led.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+  </transforms>
+
+</generated_project>

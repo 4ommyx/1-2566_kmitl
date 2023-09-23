@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Sun Sep 24 02:30:57 2023
+
+drc -z Lab8_2counter2.ncd Lab8_2counter2.pcf
+
+DRC detected 0 errors and 0 warnings.

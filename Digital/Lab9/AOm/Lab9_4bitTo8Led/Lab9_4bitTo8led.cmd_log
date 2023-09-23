@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab9_4bitTo8Led/Lab9_4bitTo8led.xst" -ofn "C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab9_4bitTo8Led/Lab9_4bitTo8led.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab9_4bitTo8led.ucf -p xc6slx9-tqg144-3 Lab9_4bitTo8led.ngc Lab9_4bitTo8led.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab9_4bitTo8led_map.ncd Lab9_4bitTo8led.ngd Lab9_4bitTo8led.pcf 
+par -w -intstyle ise -ol high -mt off Lab9_4bitTo8led_map.ncd Lab9_4bitTo8led.ncd Lab9_4bitTo8led.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab9_4bitTo8led.twx Lab9_4bitTo8led.ncd -o Lab9_4bitTo8led.twr Lab9_4bitTo8led.pcf -ucf Lab9_4bitTo8led.ucf 
+bitgen -intstyle ise -f Lab9_4bitTo8led.ut Lab9_4bitTo8led.ncd 
+sch2sym -intstyle ise -family spartan6 -refsym Lab9_4bitTo8led C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab9_4bitTo8Led/Lab9_4bitTo8led.sch C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab9_4bitTo8Led/Lab9_4bitTo8led.sym 
+sch2sym -intstyle ise -family spartan6 -refsym Lab9_4bitTo8led C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab9_4bitTo8Led/Lab9_4bitTo8led.sch C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab9_4bitTo8Led/Lab9_4bitTo8led.sym 

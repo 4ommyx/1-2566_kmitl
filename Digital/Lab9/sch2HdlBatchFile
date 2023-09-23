@@ -1,0 +1,3 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab9/SevenSig.vf,-w,C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab9/SevenSig.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab9/Mod2.vf,-w,C:/Users/natta/OneDrive/Desktop/1_2566/Digital/timeDeDe/Mod2.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab9/main.vf,-w,C:/Users/natta/OneDrive/Desktop/main.sch

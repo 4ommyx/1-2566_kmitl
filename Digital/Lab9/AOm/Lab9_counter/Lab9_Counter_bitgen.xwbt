@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\natta\OneDrive\Desktop\1_2566\Digital\Lab9_counter\Lab9_Counter.ncd
+OUTFILE=C:\Users\natta\OneDrive\Desktop\1_2566\Digital\Lab9_counter\Lab9_Counter.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=C:\Users\natta\OneDrive\Desktop\1_2566\Digital\Lab9_counter
+LICENSE=WebPack
+USER_INFO=__0_0_0
