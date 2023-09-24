@@ -6,7 +6,7 @@ def bubble(l):
                 l[i],l[i+1] = l[i+1],l[i]
                 swaped = True
         if not swaped :
-            break
+            return l
 
 def selection(l):
     for last in range(len(l)-1,0,-1):
