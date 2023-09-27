@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2023-09-24T02:20:55</DateModified>
+  <DateModified>2023-09-25T10:44:08</DateModified>
   <ModuleName>Lab8_2counter2</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab8/Lab8_2Counter2/iseconfig/Lab8_2counter2.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab8/Lab8_2Counter2\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab8/Lab8_2Counter_2/iseconfig/Lab8_2counter2.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/natta/OneDrive/Desktop/1_2566/Digital/Lab8/Lab8_2Counter_2\</ImplementationReportsDirectory>
   <DateInitialized>2023-09-24T01:58:32</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

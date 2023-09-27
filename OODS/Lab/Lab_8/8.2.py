@@ -1,37 +1,121 @@
-class Node:
-    def __init__(self, key):
+class TreeNode(object): 
+    def __init__(self, val): 
+        self.val = val 
         self.left = None
         self.right = None
-        self.val = key
-        self.rank = 0  # เพิ่มค่า rank เป็นสมาชิกของ Node
+        self.height = 1
 
-def insert(root, key):
-    if root is None:
-        return Node(key)
-    if key < root.val:
-        root.rank += 1  # เพิ่มค่า rank สำหรับ Node ทางซ้าย
-        root.left = insert(root.left, key)
-    elif key > root.val:
-        root.right = insert(root.right, key)
-    return root
+    def __str__(self):
+        return str(self.val)
+  
+class AVL_Tree(object): 
+    # Recursive function to insert key in
+    # subtree rooted with node and returns
+    # new root of subtree.
+    def insert(self, root, key):
+     
+        # Step 1 - Perform normal BST
+        if not root:
+            return TreeNode(key)
+        elif key < root.val:
+            root.left = self.insert(root.left, key)
+        else:
+            root.right = self.insert(root.right, key)
+ 
+        # Step 2 - Update the height of the
+        # ancestor node
+        root.height = 1 + max(self.getHeight(root.left),
+                           self.getHeight(root.right))
+ 
+        # Step 3 - Get the balance factor
+        balance = self.getBalance(root)
+ 
+        # Step 4 - If the node is unbalanced,
+        # then try out the 4 cases
+        # Case 1 - Left Left
+        if balance > 1 and key < root.left.val:
+            print('Not Balance, Rebalance!')
+            return self.rightRotate(root)
+ 
+        # Case 2 - Right Right
+        if balance < -1 and key > root.right.val:
+            print('Not Balance, Rebalance!')
+            return self.leftRotate(root)
+ 
+        # Case 3 - Left Right
+        if balance > 1 and key > root.left.val:
+            print('Not Balance, Rebalance!')
+            root.left = self.leftRotate(root.left)
+            return self.rightRotate(root)
+ 
+        # Case 4 - Right Left
+        if balance < -1 and key < root.right.val:
+            print('Not Balance, Rebalance!')
+            root.right = self.rightRotate(root.right)
+            return self.leftRotate(root)
+ 
+        return root
+ 
+    def leftRotate(self, z):
+ 
+        y = z.right
+        T2 = y.left
+ 
+        # Perform rotation
+        y.left = z
+        z.right = T2
+ 
+        # Update heights
+        z.height = 1 + max(self.getHeight(z.left),
+                         self.getHeight(z.right))
+        y.height = 1 + max(self.getHeight(y.left),
+                         self.getHeight(y.right))
+ 
+        # Return the new root
+        return y
+ 
+    def rightRotate(self, z):
+ 
+        y = z.left
+        T3 = y.right
+ 
+        # Perform rotation
+        y.right = z
+        z.left = T3
+ 
+        # Update heights
+        z.height = 1 + max(self.getHeight(z.left),
+                        self.getHeight(z.right))
+        y.height = 1 + max(self.getHeight(y.left),
+                        self.getHeight(y.right))
+ 
+        # Return the new root
+        return y
+ 
+    def getHeight(self, root):
+        if not root:
+            return 0
+ 
+        return root.height
+ 
+    def getBalance(self, root):
+        if not root:
+            return 0
+ 
+        return self.getHeight(root.left) - self.getHeight(root.right)
 
-def rank(root, value):
-    if root is None:
-        return 0
-    if value == root.val:
-        return root.rank
-    elif value < root.val:
-        return rank(root.left, value)
-    else:
-        return 1 + root.rank + rank(root.right, value)
-
-# อ่านข้อมูลนำเข้าและสร้างต้นไม้ BST
-input_values = list(map(int, input("Enter Input : ").split()))
+def printTree90(node, level = 0):
+    if node != None:
+        printTree90(node.right, level + 1)
+        print('     ' * level, node)
+        printTree90(node.left, level + 1)
+  
+myTree = AVL_Tree() 
 root = None
-for value in input_values:
-    root = insert(root, value)
 
-# ทดสอบการหา Rank
-query_value = int(input("Enter a value to find its rank: "))
-result = rank(root, query_value)
-print(f"Rank of {query_value} : {result}")
+data = input("Enter Input : ").split()
+for e in data:
+    print("insert :",e)
+    root = myTree.insert(root, int(e))
+    printTree90(root)
+    print("===============")

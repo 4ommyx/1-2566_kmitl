@@ -19,21 +19,10 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="1"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="2"/>
     </file>
-    <file xil_pn:name="../timeDeDe/Mod10.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="2"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
-    </file>
-    <file xil_pn:name="../../../Quad_2input_MUX.sch" xil_pn:type="FILE_SCHEMATIC"/>
-    <file xil_pn:name="../../../Priority_Encoder_8to4.sch" xil_pn:type="FILE_SCHEMATIC"/>
-    <file xil_pn:name="../../../four2to1DMUX.sch" xil_pn:type="FILE_SCHEMATIC"/>
-    <file xil_pn:name="../../../Lab9_4bitTo8Led/Lab9_4bitTo8led.sch" xil_pn:type="FILE_SCHEMATIC"/>
-    <file xil_pn:name="../../../Lab9_counter/Lab9_Counter.sch" xil_pn:type="FILE_SCHEMATIC"/>
-    <file xil_pn:name="../../../main (1).sch" xil_pn:type="FILE_SCHEMATIC"/>
     <file xil_pn:name="SevenSig.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="16"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
-    <file xil_pn:name="../../../main.sch" xil_pn:type="FILE_SCHEMATIC"/>
   </files>
 
   <properties>
@@ -97,6 +86,7 @@
     <property xil_pn:name="Enable Cyclic Redundancy Checking (CRC) spartan6" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Enable Debugging of Serial Mode BitStream" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Enable External Master Clock spartan6" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Enable Hardware Co-Simulation" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Enable Internal Done Pipe" xil_pn:value="true" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Enable Message Filtering" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Enable Multi-Pin Wake-Up Suspend Mode spartan6" xil_pn:value="false" xil_pn:valueState="default"/>
