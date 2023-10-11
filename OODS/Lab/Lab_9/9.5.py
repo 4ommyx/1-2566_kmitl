@@ -1,13 +1,13 @@
 def find_subsets(input_list):
-    subsets = [[]]  # เริ่มต้นด้วย subset ว่าง
+    subsets = [[]]  
 
     for item in input_list:
         new_subsets = []
         for subset in subsets:
-            new_subset = list(subset)  # สร้าง subset ใหม่โดยคัดลอก subset เดิม
-            new_subset.append(item)  # เพิ่ม item ลงใน subset ใหม่
-            new_subsets.append(new_subset)  # เพิ่ม subset ใหม่ลงในรายการ new_subsets
-        subsets.extend(new_subsets)  # เพิ่ม subsets ใหม่ลงในรายการ subsets
+            new_subset = list(subset)  
+            new_subset.append(item)  
+            new_subsets.append(new_subset)  
+        subsets.extend(new_subsets)  
 
     return subsets
 
